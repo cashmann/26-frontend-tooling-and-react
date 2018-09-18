@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -35,7 +35,7 @@ class App extends React.Component {
     this.setState({animal});
   }
   handleGenerate(){
-    this.updateState(say({ text: faker.fake('{{lorem.paragraph}}'), cow: this.state.animal,}));
+    this.updateState(say({ text: faker.fake('{{lorem.paragraph}}'), cow: this.state.animal}));
   }
   handleChange(event){
     let value = event.target.value;
